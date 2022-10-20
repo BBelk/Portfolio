@@ -2,9 +2,18 @@ import React from 'react';
 
 // TODO: Add a comment explaining how we are able to extract the key value pairs from props
 
+const styles = {
+  navStyle: {
+    background: '#E0EDC5',
+    // justifyContent: 'flex-end',
+    color: 'white',
+    padding: 20
+  },
+};
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
+    <ul className="nav nav-pills nav-fill" style={styles.navStyle}>
       <li className="nav-item">
         <a
           href="#home"
