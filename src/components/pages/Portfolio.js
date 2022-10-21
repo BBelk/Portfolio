@@ -9,7 +9,7 @@ import gitHubPic from '../../assets/images/GitHub-Mark.png';
 
 const style = {
   imgStyle: {
-    width: '350px',
+    width: '450px',
     height: '250px',
     // background: 'transparent',
     fill: "50%",
@@ -61,7 +61,7 @@ export default function Blog() {
     </div>
 
     <div className="img-thumbnail" style= {style.imgStyle}>
-    <img src={flower3} alt='profile pic' style={{height:'100%', width:'100'}} />
+    <img src={flower3} alt='profile pic' style={{height:'100%', width:'100%'}} />
     <h3>A third Thing
     <a href="https://www.github.com/Test">
       <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
