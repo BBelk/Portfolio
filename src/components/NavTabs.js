@@ -14,7 +14,8 @@ const styles = {
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-pills nav-fill" style={styles.navStyle}>
-      <li className="nav-item">
+      <h1 className='text-black px-4'>Bruce Belk</h1>
+      <li className="nav-item my-2">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -26,7 +27,7 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
       
-      <li className="nav-item">
+      <li className="nav-item my-2">
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
@@ -37,7 +38,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Portfolio
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item my-2">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -48,7 +49,7 @@ function NavTabs({ currentPage, handlePageChange }) {
           Contact
         </a>
       </li>
-      <li className="nav-item">
+      <li className="nav-item my-2">
         <a
           href="#resume"
           //  TODO: Add a comment explaining what this logic is doing
