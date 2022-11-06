@@ -1,8 +1,5 @@
-import React from 'react'
-
-import gitHubPic from '../../assets/images/GitHub-Mark.png';
-import linkedInPic from '../../assets/images/linkedInLogo.png';
-import emailPic from '../../assets/images/email.png';
+import React from 'react';
+import { FaLinkedin, FaTwitter, FaGithub, FaMailBulk } from "react-icons/fa";
 
 const styles = {
   footerStyle: {
@@ -17,25 +14,29 @@ const styles = {
     backgroundColor: '#92AA83',    
   },
   imgStyle: {
-    width: '50px',
+    width: '500px',
     height: '50px',
+    // size: '50px',
     background: 'transparent',
   }
 };
 
 export default function Footer() {
+  let iconStyle = {color: "black", fontSize: "3.5em"}
   return (
-    <section style={styles.footerStyle} className="footer mt-auto py-1 text-center">
-      {/* <div d-inline-block> */}
-      <a href="https://github.com/BBelk">
-        <img  src={gitHubPic} alt='github logo' className="img-thumbnail m-3" style= {styles.imgStyle}/>
+    <section style={styles.footerStyle} className="footer mt-auto py-2 text-center">
+      <div className="row justify-content-center g-2">
+      <a href="https://github.com/BBelk" className="col-sm-auto">
+        <FaGithub style={iconStyle}/>
       </a>
-      <a href="https://www.linkedin.com/in/bruce-belk-28716769/">
-        <img src={linkedInPic} alt='linkedin logo' className="img-thumbnail m-3" style= {styles.imgStyle}/>
+      <a href="https://www.linkedin.com/in/bruce-belk-28716769/" className="imgStyle col-sm-auto">
+        <FaLinkedin style={iconStyle}/>
       </a>
-      <a href="mailto:bb@brucebelk.com">
-        <img src={emailPic} alt='email logo' className="img-thumbnail m-3" style= {styles.imgStyle}/>
+      <a href="mailto:bb@brucebelk.com" className="imgStyle col-sm-auto">
+        <FaMailBulk style={iconStyle}/>
+        {/* <img src='' alt='email logo' className="img-thumbnail m-3" style= {styles.imgStyle}/> */}
       </a>
+      </div>
 
 
       {/* </div> */}
