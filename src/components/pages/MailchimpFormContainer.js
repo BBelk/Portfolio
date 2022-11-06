@@ -46,10 +46,10 @@ const CustomForm = ({ status, message, onValidated }) => {
             className="mc__form"
             onSubmit={(e) => handleSubmit(e)}
         >
-            <h3 className="mc__title">
+            <h5 className="mc__title">
                 {status === "success" ? "Success!" :
-                    "Join our email list for future updates."}
-            </h3>
+                    "Join my email list for infrequent future updates and only the finest spam."}
+            </h5>
 
             {status === "sending" && (
                 <div
@@ -76,7 +76,7 @@ const CustomForm = ({ status, message, onValidated }) => {
                         onChangeHandler={setFirstName}
                         type="text"
                         value={firstName}
-                        placeholder="Jane"
+                        placeholder="John"
                         isRequired
                     />
 
