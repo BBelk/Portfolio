@@ -5,7 +5,9 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './pages/Footer';
-import MailchimpFormContainer from './pages/MailchimpFormContainer';
+import { GHSProvider } from '../utils/ContextProvider';
+// import MailchimpFormContainer from './pages/MailchimpForm';
+
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -37,6 +39,8 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
+    <>
+      <GHSProvider>
     <div style={styles.doBG}>
       {/* // TODO: Add a comment describing what we are passing as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
@@ -44,5 +48,7 @@ export default function PortfolioContainer() {
       {renderPage()}
       <Footer />
     </div>
+    </GHSProvider>
+    </>
   );
 }

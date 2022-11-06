@@ -27,13 +27,13 @@ export default function Footer() {
   return (
     <section style={styles.footerStyle} className="footer mt-auto py-1 text-center">
       {/* <div d-inline-block> */}
-      <a href="https://www.github.com/Test">
+      <a href="https://github.com/BBelk">
         <img  src={gitHubPic} alt='github logo' className="img-thumbnail m-3" style= {styles.imgStyle}/>
       </a>
-      <a href="https://www.linkedin.com/">
+      <a href="https://www.linkedin.com/in/bruce-belk-28716769/">
         <img src={linkedInPic} alt='linkedin logo' className="img-thumbnail m-3" style= {styles.imgStyle}/>
       </a>
-      <a href="mailto:test@gmail.com">
+      <a href="mailto:bb@brucebelk.com">
         <img src={emailPic} alt='email logo' className="img-thumbnail m-3" style= {styles.imgStyle}/>
       </a>
 
