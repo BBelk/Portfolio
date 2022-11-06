@@ -1,5 +1,6 @@
 import React from 'react';
 import profilePic from '../../assets/images/its-me.png';
+import MailchimpFormContainer from './MailchimpFormContainer';
 
 const imgStyle = {
   width: '200px',
@@ -9,6 +10,7 @@ const imgStyle = {
 export default function About() {
   return (
     <div className='p-3'>
+      <MailchimpFormContainer />
       <h1>About Me</h1>
       <img src={profilePic} alt='profile pic' className="img-thumbnail" style= {imgStyle}/>
       <p className="p-3">
