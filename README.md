@@ -1,4 +1,4 @@
-# 20 React Portfolio Movie
+# 20 React Portfolio
 
   ## Table of contents
   1. [Submission](#submission)
