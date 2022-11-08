@@ -22,25 +22,27 @@ const styles = {
 };
 
 export default function Footer() {
-  let iconStyle = {color: "black", fontSize: "3.5em"}
+  let iconStyle = {color: "black", fontSize: "2.5em"}
   return (
-    <section style={styles.footerStyle} className="footer mt-auto py-2 text-center">
-      <div className="row justify-content-center g-2">
-      <a href="https://github.com/BBelk" className="col-sm-auto">
+    <section style={styles.footerStyle} className="footer mt-auto py-2 text-center justify-content-center">
+      <div className="row w-25 justify-content-center g-3">
+      <a href="https://github.com/BBelk" className="col">
         <FaGithub style={iconStyle}/>
       </a>
-      <a href="https://www.linkedin.com/in/bruce-belk-28716769/" className="imgStyle col-sm-auto">
+      <a href="https://www.linkedin.com/in/bruce-belk-28716769/" className="col">
         <FaLinkedin style={iconStyle}/>
       </a>
-      <a href="mailto:bb@brucebelk.com" className="imgStyle col-sm-auto">
+      <a href="https://twitter.com/BruceBelk" className="col">
+        <FaTwitter style={iconStyle}/>
+      </a>
+      <a href="mailto:contact@brucebelk.com?subject=Hello!" className="col">
         <FaMailBulk style={iconStyle}/>
-        {/* <img src='' alt='email logo' className="img-thumbnail m-3" style= {styles.imgStyle}/> */}
       </a>
       </div>
 
 
       {/* </div> */}
-      <h5>&copy; 2022 &mdash; Bruce Belk</h5>
+      <h5 className="my-1">&copy; 2022 &mdash; Bruce Belk</h5>
     </section>
   );
 }
