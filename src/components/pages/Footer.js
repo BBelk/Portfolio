@@ -25,7 +25,9 @@ export default function Footer() {
   let iconStyle = {color: "black", fontSize: "2.5em"}
   return (
     <section style={styles.footerStyle} className="footer mt-auto py-2 text-center justify-content-center">
-      <div className="row w-25 justify-content-center g-3">
+      <div className="row justify-content-center g-3">
+        <div className='col-sm-3'>
+          <div className='row'>
       <a href="https://github.com/BBelk" className="col">
         <FaGithub style={iconStyle}/>
       </a>
@@ -35,9 +37,11 @@ export default function Footer() {
       <a href="https://twitter.com/BruceBelk" className="col">
         <FaTwitter style={iconStyle}/>
       </a>
-      <a href="mailto:contact@brucebelk.com?subject=Hello!" className="col">
+      {/* <a href="mailto:contact@brucebelk.com?subject=Hello!" className="col">
         <FaMailBulk style={iconStyle}/>
-      </a>
+      </a> */}
+      </div>
+      </div>
       </div>
 
 
