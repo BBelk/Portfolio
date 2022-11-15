@@ -13,22 +13,38 @@ const styles = {
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-pills nav-fill" style={styles.navStyle}>
-      <h1 className='text-black px-4'>Bruce Belk</h1>
-      <li className="nav-item my-2">
-        <a
+    <div>
+      <nav className="navbar navbar-expand-lg" style={styles.navStyle} >
+  {/* <a className="navbar-brand" href="#">Navbar</a> */}
+    <h1 className='text-black px-4 navbar-brand'>
+    <a
+        className="nav-link"
           href="#about"
           onClick={() => handlePageChange('About')}
           //  TODO: Add a comment explaining what this logic is doing
 
           className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
         >
+          Bruce Belk
+        </a>
+    </h1>
+  
+  <div>
+    <ul className="navbar-nav mr-auto" >
+    {/* <ul className="nav nav-pills nav-fill" style={styles.navStyle}> */}
+      <li className="nav-item">
+        <a
+          href="#about"
+          onClick={() => handlePageChange('About')}
+          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+        >
           About
         </a>
       </li>
       
-      <li className="nav-item my-2">
+      <li className="nav-item">
         <a
+        className="nav-link"
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
           //  TODO: Add a comment explaining what this logic is doing
@@ -38,8 +54,9 @@ function NavTabs({ currentPage, handlePageChange }) {
           Portfolio
         </a>
       </li>
-      <li className="nav-item my-2">
+      <li className="nav-item">
         <a
+        className="nav-link"
           href="#contact"
           onClick={() => handlePageChange('Contact')}
           //  TODO: Add a comment explaining what this logic is doing
@@ -49,8 +66,9 @@ function NavTabs({ currentPage, handlePageChange }) {
           Contact
         </a>
       </li>
-      <li className="nav-item my-2">
+      <li className="nav-item">
         <a
+        className="nav-link"
           href="#resume"
           //  TODO: Add a comment explaining what this logic is doing
 
@@ -61,6 +79,11 @@ function NavTabs({ currentPage, handlePageChange }) {
         </a>
       </li>
     </ul>
+    </div>
+    </nav>
+    </div>
+
+    
   );
 }
 

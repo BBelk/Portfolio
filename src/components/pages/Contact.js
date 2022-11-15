@@ -52,39 +52,56 @@ const Contact = () => {
 
         return response.json();
       })
-      .then(() => setStatus("We'll be in touch soon."))
+      .then(() => setStatus("I'll be in touch soon."))
       .catch((err) => setStatus(err.toString()));
   };
 
   if (status) {
     return (
       <>
-        <div className="text-2xl">Thank you!</div>
-        <div className="text-md">{status}</div>
+      <div className="flex justify-content-center">
+        <div className="flex"><h2>Thank you!</h2></div>
+        <div className="flex"><h4>{status}</h4></div>
+        </div>
       </>
     );
   }
 
   return (
+    <div className="">
+    <div className='d-flex justify-content-center'>
+    <h1 className='heroHeader'><br></br>Contact</h1>
+    </div> 
+    <div className='d-flex justify-content-center'>
     <form
       action={FORM_ENDPOINT}
       onSubmit={handleSubmit}
       method="POST"
       target="_blank"
     >
-      <div>
-        <input type="text" placeholder="Your name" name="name" required />
+
+<section className='contact-form'>
+      <p className='contact-headers'>Name</p>
+      <input className="contact-input" type="text" name="name" placeholder="Your Name" />
+
+     <p className='contact-headers'>Email</p>
+      <input className="contact-input" type="email" name="email" placeholder="Your Email" />
+
+      <p className='contact-headers'>Message</p>
+      <textarea rows="6" className="form-control" type="text" name="message" placeholder="Your Message" />
+
+      <div className="button">
+        <button data-testid="button" type="submit">Submit</button>
       </div>
-      <div>
-        <input type="email" placeholder="Email" name="email" required />
-      </div>
-      <div>
-        <textarea placeholder="Your message" name="message" required />
-      </div>
-      <div>
-        <button type="submit"> Send a message </button>
-      </div>
+         
+  
+</section>
+
+
+      
     </form>
+    </div>
+    </div>
   );
 }
 

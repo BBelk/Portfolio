@@ -5,7 +5,7 @@ export default function Home() {
     <div className='p-2'>
       <h1>Resume</h1>
       <p>
-        Resume is available <a href="https://www.google.com">here.</a>
+        Resume is available <a href="https://docs.google.com/document/d/1HDgAJtdfN8kw20kA3bTNSPmSp-eRplVa7NmPXHd8i64/edit?usp=sharing" target="_blank">here.</a>
       </p>
       <h2>Front-end Tech</h2>
       <ul>
