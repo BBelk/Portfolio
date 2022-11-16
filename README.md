@@ -8,7 +8,7 @@
   4. [Visuals](#visuals)
 
   ## Submission
-  [Link to GitHub Page Site](https://bbelk.github.io/react-portfolio-project/)
+  [Link to GitHub Page Site](https://BBelk.github.io/Portfolio)
 
   ## Description
   This is a react app hosted through GitHub pages. This simple site is a portfolio for yours truely.
