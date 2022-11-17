@@ -22,7 +22,7 @@ const styles = {
 };
 
 export default function Footer() {
-  let iconStyle = {color: "black", fontSize: "2.5em"}
+  let iconStyle = {color: "black", fontSize: "2em"}
   return (
     <section style={styles.footerStyle} className="footer mt-auto py-2 text-center justify-content-center">
       <div className="row justify-content-center g-3">
@@ -46,7 +46,7 @@ export default function Footer() {
 
 
       {/* </div> */}
-      <h5 className="my-1">&copy; 2022 &mdash; Bruce Belk</h5>
+      <h7 className="my-1">&copy; 2022 &mdash; Bruce Belk</h7>
     </section>
   );
 }

@@ -6,19 +6,22 @@ import flower1 from '../../assets/images/flowers.jpg';
 import flower2 from '../../assets/images/flower2.jpg';
 import flower3 from '../../assets/images/flower3.jpg';
 
-import gitHubPic from '../../assets/images/GitHub-Mark.png';
+// import gitHubPic from '../../assets/images/GitHub-Mark.png';
+import { FaGithub, FaSteam } from "react-icons/fa";
 
 const style = {
-  // imgStyle: {
-  //   width: '450px',
-  //   height: '250px',
-  //   // background: 'transparent',
-  //   fill: "50%",
-  // },
-  // logoStyle: {
-  //   width: '25px',
-  //   height: '25px',
-  // }
+  imgStyle: {
+    // width: '100%',
+    // height: '50%',
+    // background: 'transparent',
+    // fill: "50%",
+    // 'margin-bottom': '-200px',
+  },
+  logoStyle: {
+    width: '25px',
+    height: '25px',
+    'margin-bottom': '4px',
+  }
   
 }
 
@@ -55,65 +58,104 @@ const images = [
      height: 212,
   },
 ];
-
+let iconStyle = {color: "black", fontSize: "0.8em", 'margin-bottom': '4px', 'margin-left': '4px'}
 
 export default function Blog() {
   return (
     <div className='p-3'>
-      <h1>Portfolio</h1>
+    <h5>Portfolio</h5>
+{/* <Gallery images={images} /> */}
+    <div className='row vh-0'>
+  <div className="img-thumbnail col-sm-3 pb-5" style= {style.imgStyle}>
+  <img src={vanGame} alt='the van game pic' style={{height:'100%', width:'100%'}} />
+  <h3>
+  <a href="https://store.steampowered.com/app/2081860/The_Van_Game/">The Van Game 
+  <FaSteam style={iconStyle}/>
+  </a>
+    </h3> 
+  </div>
+
+  <div className="img-thumbnail col-sm-3 pb-5" style= {style.imgStyle}>
+  <img src={flower1} alt='profile pic' style={{height:'100%', width:'100%'}} />
+  <h3>NotInsta-Clone 
+  <a href="https://www.github.com/Test">
+    <FaGithub style={iconStyle}/>
+  </a>
+    </h3> 
+  </div>
+
+  <div className="img-thumbnail col-sm-3 pb-5" style= {style.imgStyle}>
+  <img src={flower2} alt='profile pic' style={{height:'100%', width:'100%'}} />
+  <h3>Pokemon Giphy
+  <a href="https://www.github.com/Test">
+    <FaGithub style={iconStyle}/>
+  </a>
+    </h3> 
+  </div>
+
+  <div className="img-thumbnail col-sm-3 pb-5" style= {style.imgStyle}>
+  <img src={flower3} alt='profile pic' style={{height:'100%', width:'100%'}} />
+  <h3>A third Thing
+  <a href="https://www.github.com/Test">
+    <FaGithub style={iconStyle}/>
+  </a>
+    </h3> 
+  </div>
+
+    
+    </div>
       
+  </div>
+//     <div className='p-3'>
+//       <h1>Portfolio</h1>
+// {/* <Gallery images={images} /> */}
+//       <div style={{display:'flex',
+//       'flex-wrap':'wrap',
+//       // display:'grid',
+//     gridTemplateRows: 'auto',
+//     rowGap: '5ch',
+//     gridTemplateColumns: '1fr 1fr',
+//     padding: '50px'
+//     }}>
+//     <div className="img-thumbnail" style= {style.imgStyle}>
+//     <img src={vanGame} alt='profile pic' style={{height:'100%', width:'100%'}} />
+//     <h3>The Van Game 
+//     <a href="https://store.steampowered.com/app/2081860/The_Van_Game/">
+//       <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
+//     </a>
+//       </h3> 
+//     </div>
 
- 
+//     <div className="img-thumbnail" style= {style.imgStyle}>
+//     <img src={flower1} alt='profile pic' style={{height:'100%', width:'100%'}} />
+//     <h3>NotInsta-Clone 
+//     <a href="https://www.github.com/Test">
+//       <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
+//     </a>
+//       </h3> 
+//     </div>
 
- 
-<Gallery images={images} />
+//     <div className="img-thumbnail" style= {style.imgStyle}>
+//     <img src={flower2} alt='profile pic' style={{height:'100%', width:'100%'}} />
+//     <h3>Pokemon Giphy
+//     <a href="https://www.github.com/Test">
+//       <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
+//     </a>
+//       </h3> 
+//     </div>
 
-
-      <div style={{display:'grid',
-    gridTemplateRows: 'auto',
-    rowGap: '5ch',
-    gridTemplateColumns: '1fr 1fr',
-    padding: '50px'
-    }}>
-    <div className="img-thumbnail" style= {style.imgStyle}>
-    <img src={vanGame} alt='profile pic' style={{height:'100%', width:'100%'}} />
-    <h3>The Van Game 
-    <a href="https://www.github.com/Test">
-      <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
-    </a>
-      </h3> 
-    </div>
-
-    <div className="img-thumbnail" style= {style.imgStyle}>
-    <img src={flower1} alt='profile pic' style={{height:'100%', width:'100%'}} />
-    <h3>NotInsta-Clone 
-    <a href="https://www.github.com/Test">
-      <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
-    </a>
-      </h3> 
-    </div>
-
-    <div className="img-thumbnail" style= {style.imgStyle}>
-    <img src={flower2} alt='profile pic' style={{height:'100%', width:'100%'}} />
-    <h3>Pokemon Giphy
-    <a href="https://www.github.com/Test">
-      <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
-    </a>
-      </h3> 
-    </div>
-
-    <div className="img-thumbnail" style= {style.imgStyle}>
-    <img src={flower3} alt='profile pic' style={{height:'100%', width:'100%'}} />
-    <h3>A third Thing
-    <a href="https://www.github.com/Test">
-      <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
-    </a>
-      </h3> 
-    </div>
+//     <div className="img-thumbnail" style= {style.imgStyle}>
+//     <img src={flower3} alt='profile pic' style={{height:'100%', width:'100%'}} />
+//     <h3>A third Thing
+//     <a href="https://www.github.com/Test">
+//       <img  src={gitHubPic} alt='github logo' style= {style.logoStyle}/>
+//     </a>
+//       </h3> 
+//     </div>
 
       
-      </div>
+//       </div>
         
-    </div>
+//     </div>
   );
 }

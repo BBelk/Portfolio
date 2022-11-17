@@ -70,7 +70,7 @@ const Contact = () => {
   return (
     <div className="">
     <div className='d-flex justify-content-center'>
-    <h1 className='heroHeader'><br></br>Contact</h1>
+    <h5 className='heroHeader'><br></br>Contact</h5>
     </div> 
     <div className='d-flex justify-content-center'>
     <form
