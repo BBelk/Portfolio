@@ -65,41 +65,49 @@ export default function Blog() {
     <div className='p-3'>
     <h5>Portfolio</h5>
 {/* <Gallery images={images} /> */}
-    <div className='row vh-0'>
-  <div className="img-thumbnail col-sm-3 pb-5" style= {style.imgStyle}>
-  <img src={vanGame} alt='the van game pic' style={{height:'100%', width:'100%'}} />
+    <div className='row gx-2'>
+  <div className="col-sm-3 pb-5" style= {style.imgStyle}>
+    <div className='p-3'>
+  <img src={vanGame} alt='the van game pic' className="img-thumbnail" style={{height:'100%', width:'100%'}} />
   <h3>
   <a href="https://store.steampowered.com/app/2081860/The_Van_Game/">The Van Game 
   <FaSteam style={iconStyle}/>
   </a>
     </h3> 
+    </div>
   </div>
 
-  <div className="img-thumbnail col-sm-3 pb-5" style= {style.imgStyle}>
-  <img src={flower1} alt='profile pic' style={{height:'100%', width:'100%'}} />
+  <div className="col-sm-3 pb-5" style= {style.imgStyle}>
+    <div className='p-3'>
+  <img src={flower1} alt='profile pic' className="img-thumbnail" style={{height:'100%', width:'100%'}} />
   <h3>NotInsta-Clone 
   <a href="https://www.github.com/Test">
     <FaGithub style={iconStyle}/>
   </a>
     </h3> 
+    </div>
   </div>
 
-  <div className="img-thumbnail col-sm-3 pb-5" style= {style.imgStyle}>
-  <img src={flower2} alt='profile pic' style={{height:'100%', width:'100%'}} />
+  <div className="col-sm-3 pb-5" style= {style.imgStyle}>
+    <div className='p-3'>
+  <img src={flower2} alt='profile pic' className="img-thumbnail" style={{height:'100%', width:'100%'}} />
   <h3>Pokemon Giphy
   <a href="https://www.github.com/Test">
     <FaGithub style={iconStyle}/>
   </a>
     </h3> 
+    </div>
   </div>
 
-  <div className="img-thumbnail col-sm-3 pb-5" style= {style.imgStyle}>
-  <img src={flower3} alt='profile pic' style={{height:'100%', width:'100%'}} />
+  <div className="col-sm-3 pb-5" style= {style.imgStyle}>
+    <div className='p-3'>
+  <img src={flower3} alt='profile pic' className="img-thumbnail" style={{height:'100%', width:'100%'}} />
   <h3>A third Thing
   <a href="https://www.github.com/Test">
     <FaGithub style={iconStyle}/>
   </a>
     </h3> 
+    </div>
   </div>
 
     
