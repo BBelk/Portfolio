@@ -11,13 +11,13 @@
   [Link to GitHub Page Site](https://BBelk.github.io/Portfolio)
 
   ## Description
-  This is a react app hosted through GitHub pages. This simple site is a portfolio for yours truely.
+  This is my portfolio/personal website. Made with React, showcases what I can do inside of what I can do. Has a form to sign up for email updates through MailChimp, and has a contact form which actually works like a real contact form. File structure isn't great and the navbar doesn't act correctly on mobile but I'll keep working on it.
  
   ## Usage
   Simply click the link to explore the website.
 
   ## Technologies
-  1. Node.js 
+  1. Node.js
   2. React
 
   ## Visuals
